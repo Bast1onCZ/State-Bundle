@@ -18,7 +18,7 @@ use BastSys\UtilsBundle\Entity\EntityManagerAware\TEntityManagerAware;
  * @package BastSys\StateBundle\Entity
  * @author mirkl
  */
-abstract class TState implements IState
+trait TState
 {
     use TEntityManagerAware;
 
