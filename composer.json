@@ -1,0 +1,27 @@
+{
+    "name": "bastsys/state-bundle",
+    "description": "Entity state utilities",
+    "type": "symfony-bundle",
+    "require": {
+        "php": "^7.4",
+        "symfony/orm-pack": "^2.0",
+        "symfony/framework-bundle": "^5.1",
+        "bastsys/utils-bundle": "^1.4"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.1"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "klobaska",
+            "email": "mir.klobaska@seznam.cz"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "BastSys\\StateBundle\\": ""
+        }
+    }
+}
