@@ -8,7 +8,7 @@ namespace BastSys\StateBundle\Exception;
  * @package BastSys\StateBundle\Exception
  * @author mirkl
  */
-class StateChangeException extends \Exception
+class StateChangeException extends \RuntimeException
 {
 
 }

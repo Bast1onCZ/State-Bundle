@@ -8,7 +8,7 @@ namespace BastSys\StateBundle\Exception;
  * @package BastSys\StateBundle\Exception
  * @author mirkl
  */
-class WrongStateException extends \Exception
+class WrongStateException extends \LogicException
 {
 
 }
