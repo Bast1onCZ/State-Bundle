@@ -77,7 +77,7 @@ trait TState
             /** @var IState $interface */
             $interface = $this;
             $eventManager->dispatchEvent(
-                StateChangedEventArgs::class,
+                StateChangedEventArgs::NAME,
                 new StateChangedEventArgs($interface, $prevState, $state)
             );
         } catch (\Throwable $ex) {

@@ -16,6 +16,8 @@ use Doctrine\Common\EventArgs;
  */
 class StateChangedEventArgs extends EventArgs
 {
+    const NAME = 'entityStateChanged';
+
     /**
      * @var IState
      */

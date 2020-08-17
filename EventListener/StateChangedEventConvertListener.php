@@ -33,7 +33,7 @@ class StateChangedEventConvertListener
     /**
      * @param StateChangedEventArgs $args
      */
-    public function stateChanged(StateChangedEventArgs $args) {
+    public function entityStateChanged(StateChangedEventArgs $args) {
         $symfonyEvent = $args->getEntity()->createStateChangedEvent(
             $args->getPrevState(),
             $args->getNewState()

@@ -9,4 +9,4 @@ services:
         arguments:
             - '@event_dispatcher'
         tags:
-            - {name: doctrine.event_listener, event: BastSys\StateBundle\Event\StateChangedEventArgs}
+            - {name: doctrine.event_listener, event: entityStateChanged}
