@@ -7,7 +7,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Class StateChangeEvent
- * @package App\ResourceBundle\Event
+ * @package BastSys\StateBundle\Event
  * @author mirkl
  */
 class EntityStateChangedEvent extends Event

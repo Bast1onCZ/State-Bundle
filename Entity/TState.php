@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace BastSys\StateBundle\Entity;
 
-use App\ResourceBundle\Event\StateChangedEventArgs;
+use BastSys\StateBundle\Event\StateChangedEventArgs;
 use BastSys\StateBundle\Event\EntityStateChangedEvent;
 use BastSys\StateBundle\Exception\StateChangeException;
 use BastSys\StateBundle\Exception\WrongStateException;
@@ -74,9 +74,11 @@ trait TState
         $this->state = $state;
 
         try {
+            /** @var IState $interface */
+            $interface = $this;
             $eventManager->dispatchEvent(
                 StateChangedEventArgs::class,
-                new StateChangedEventArgs($this, $prevState, $state)
+                new StateChangedEventArgs($interface, $prevState, $state)
             );
         } catch (\Throwable $ex) {
             $this->state = $prevState;

@@ -5,8 +5,8 @@ services:
         autowire: false
 
     bastsys.state_bundle.listener.state_changed_convert:
-        class: App\ResourceBundle\EventListener\StateChangedEventConvertListener
+        class: BastSys\StateBundle\EventListener\StateChangedEventConvertListener
         arguments:
             - '@event_dispatcher'
         tags:
-            - {name: doctrine.event_listener, event: App\ResourceBundle\Event\StateChangedEventArgs}
+            - {name: doctrine.event_listener, event: BastSys\StateBundle\Event\StateChangedEventArgs}

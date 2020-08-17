@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\ResourceBundle\Event;
+namespace BastSys\StateBundle\Event;
 
 use BastSys\StateBundle\Entity\IState;
 use Doctrine\Common\EventArgs;
@@ -11,7 +11,7 @@ use Doctrine\Common\EventArgs;
  *
  * Serves as a doctrine event, which is listened to and is converted into symfony event in StateChangedEventConvertListener
  *
- * @package App\ResourceBundle\Event
+ * @package BastSys\StateBundle\Event
  * @author mirkl
  */
 class StateChangedEventArgs extends EventArgs

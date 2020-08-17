@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\ResourceBundle\EventListener;
+namespace BastSys\StateBundle\EventListener;
 
-use App\ResourceBundle\Event\StateChangedEventArgs;
+use BastSys\StateBundle\Event\StateChangedEventArgs;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 /**
@@ -11,7 +11,7 @@ use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
  *
  * Converts doctrine state changed event to symfony state changed event.
  *
- * @package App\ResourceBundle\EventListener
+ * @package BastSys\StateBundle\EventListener
  * @author mirkl
  */
 class StateChangedEventConvertListener

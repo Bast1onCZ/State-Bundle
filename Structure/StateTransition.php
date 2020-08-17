@@ -5,7 +5,7 @@ namespace BastSys\StateBundle\Structure;
 
 /**
  * Class StateTransition
- * @package App\ResourceBundle\Structure\Entity\State
+ * @package BastSys\StateBundle\Structure\Entity\State
  * @author mirkl
  */
 class StateTransition
