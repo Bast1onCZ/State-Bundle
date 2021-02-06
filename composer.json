@@ -6,7 +6,8 @@
         "php": "^7.4",
         "symfony/orm-pack": "^2.0",
         "symfony/framework-bundle": "^5.1",
-        "bastsys/utils-bundle": "^1.4"
+        "bastsys/utils-bundle": "^1.4",
+        "symfony/workflow": "^5.2"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^5.1"
